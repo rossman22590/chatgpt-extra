@@ -68,7 +68,7 @@ app.post('/davinci', async (req, res) => {
     console.log(cleanPrompt)
 
     const response = await openai.createCompletion({
-      model: 'text-davinci-003',
+      model: 'gpt-3.5-turbo',
       prompt: `
 I want you to reply to all my questions in markdown format. 
 Q: ${cleanPrompt}?.
